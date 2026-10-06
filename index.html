@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Wallet</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ethers.js -->
+    <script src="https://cdn.jsdelivr.net/npm/ethers@6.17.0/dist/ethers.umd.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Create Ethereum Wallet</h1>
+
+    <button id="createWallet">Create Wallet</button>
+
+    <p>Wallet Address:</p>
+    <p id="address"></p>
+
+    <p>Private Key:</p>
+    <p id="privateKey"></p>
+
+    <p>Balance:</p>
+<p id="balance">0 ETH</p>
+
+    <script src="script.js"></script>
+
+</body>
+</html><h2>Send ETH</h2>
+
+<label>To Address:</label>
+<input
+    type="text"
+    id="toAddress"
+    placeholder="0x..."
+>
+
+<label>Amount (ETH):</label>
+<input
+    type="text"
+    id="amount"
+    placeholder="0.001"
+>
+
+<button id="sendEth">Send ETH</button>
+
+<p id="sendStatus"></p>
